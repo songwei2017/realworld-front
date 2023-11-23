@@ -153,7 +153,7 @@ export enum ContentType {
 
 export class HttpClient<SecurityDataType = unknown> {
   //public baseUrl: string = 'https://api.realworld.io/api';
-  public baseUrl: string = 'http://http://144.24.76.172:31188/api';
+  public baseUrl: string = 'http://144.24.76.172:31188/api';
   private securityData: SecurityDataType | null = null;
   private securityWorker?: ApiConfig<SecurityDataType>['securityWorker'];
   private abortControllers = new Map<CancelToken, AbortController>();
