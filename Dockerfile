@@ -3,7 +3,7 @@ FROM node:19.9.0 AS builder
 COPY . /src
 WORKDIR /src
 
-RUN yarn install
+RUN yarn install && yarn build
 
 
 FROM nginx
